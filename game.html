@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Grocery Run! </title>
+    <link rel="stylesheet" href="./game.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&family=Margarine&family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
+    <script src="./game.js"></script>
+</head>
+<body>
+    <header>
+        <div id="audioTag" >
+            <audio controls autoplay loop src="./audio/Little Happiness.mp3"></audio>
+            <h3>music</h3>
+        </div>
+        
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li> <a href="./index.html">HOME</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="logoDiv">
+            <a href="./game.html">
+                <img class="logo"src="./img/logo.png" alt="logo">
+            </a>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li>SCORE</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   
+    <main>
+        <div id="canvasDiv">
+            <canvas id="canvas"></canvas>
+        </div>
+        <div id="info">
+            <div id="cashierDiv">
+                <img id="cashier" src="./img/milk.png" alt="cashier">
+            </div>
+            <article id="direction">
+                <h1> Dear Customer...</h1>
+                <h2> Please be careful for running boxes and ANGRY OLD LADIES!</h2> 
+                <h2> To play, press "<u>SPACE BAR</u>"" to <u>JUMP</u> over the obstacles.
+                     "<u>RIGHT ARROW</u>" for a small <u>JUMP BOOST</u> ! ... To "<u>RESTART GAME</u>" click the <u> LOGO</u>.</h2>
+            </article>
+            <div id="cashierDiv">
+                <img id="cashier" src="./img/cashier.png" alt="cashier">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

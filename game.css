@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gaegu', cursive;
+
+}
+
+#audioTag {
+    position: absolute;
+    bottom: 0px;
+    left: 100px;
+    padding: 10px;
+
+}
+
+audio {
+    width: 100px;
+    height: 100px;
+}
+
+
+body {
+    background-color: #f8c02e;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: last baseline;
+    padding: 2px;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    height: 200px;
+    margin-bottom: 0;
+
+}
+ ul, li{
+    display: block;
+    font-weight: bolder;
+    color: crimson;
+    text-shadow: -1px 4px black;
+    font-size: 5rem;
+
+}
+a :hover{
+    color: white;
+}
+ 
+a {
+    text-decoration: none;
+    color: crimson;
+}
+
+
+.logoDiv{
+    position: relative;
+    overflow: hidden;
+
+}
+
+.logo {
+    padding-top:10px;
+    position: fixed;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    height: 403.13px;
+    width: 494.62px;
+
+}
+
+
+
+#canvasDiv {
+    padding: 10px;
+
+
+}
+
+canvas{
+    background-color:#f8c02e;
+    padding-bottom: 20px;
+    margin-top: 0;
+    border-bottom: 6px groove rgba(231, 2, 2, 0.997);
+}
+
+
+ #info {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding-right: 120px;
+    padding-left: 120px;
+    color: black;
+
+ }
+
+ #direction  {
+    text-align: start;
+    padding: 10px;
+    margin: 0px 50px 10px 25px;
+    width: 100%;
+    border: 3px white gr;
+ }
+ 
+
+#cashier {
+    width: 125px;
+    height: 133.6px;
+
+}

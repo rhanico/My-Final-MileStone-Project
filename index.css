@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gaegu', cursive;
+}
+
+body {
+    background-color:#f8c02e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header {
+    padding: 10px;
+    padding-bottom: 5px;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+
+}
+
+#bannerSign {
+    font-size: 1em;
+    padding: 10px;
+    width: 100%;
+}
+
+#bannerContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#bannerContent h2 {
+    margin: 3px;
+    padding: 10px;
+    margin: auto;
+    font-weight: bolder ;
+}
+
+#bannerContent img {
+    width: 50px;
+    height: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+#mainContent {
+    height: 63em;
+    width: 100%;
+}
+
+
+#mainPoster img{
+    width: 785.2px;
+    height: auto;
+}
+
+
+#logo img {
+    width: 552.33px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+article h1{
+    font-size: 2.5em;
+    
+}
+
+
+
+audio {
+    width: 100px;
+    height: 100px;
+}
