@@ -1,4 +1,4 @@
-# My-Final-MileStone-Project
+# My-Final-MileStone-Project - THE GROCERY RUN!
 This is my submission for my 1st Milestone Project- WEB BROWSER game with HTML/ CSS /JavaScript
 
 
