@@ -7,10 +7,11 @@ let playerHeight = 257;
 let playerX = 100;
 let playerY = canvasHeight - playerHeight;
 let playerImg;
-
+                                                       // Title: (chrome-dinosaur-game) * Author:(Yip, K) * Date: (2023) * Code version:(v1) * 
+                                                       //  Availability:(https://github.com/ImKennyYip/chrome-dinosaur-game.git) * **/
 let player = {
     x : playerX,
-    y : playerY,
+    y : playerY,                                            
     width : playerWidth,
     height : playerHeight
 }
@@ -58,17 +59,15 @@ let score = 0;
 
 
 window.onload = function() {
-    canvas = document.getElementById("canvas");
-    canvas.height = canvasHeight;
-    canvas.width = canvasWidth;
-
-    content = canvas.getContext("2d");
-
-    backOneImg = new Image();
-    backOneImg.src = "./img/shelve1.png";
-    
-
-    playerImg = new Image();
+    canvas = document.getElementById("canvas");     
+    canvas.height = canvasHeight;                   
+    canvas.width = canvasWidth;                     
+                                                    
+    content = canvas.getContext("2d");              
+                                                    // Title: (chrome-dinosaur-game) * Author:(Yip, K) * Date: (2023) * Code version:(v1) * 
+                                                    //  Availability:(https://github.com/ImKennyYip/chrome-dinosaur-game.git) * **/
+                                                    
+    playerImg = new Image();                           
     playerImg.src = "./img/player.png";
     playerImg.onload = function() {
         content.drawImage( playerImg, player.x, player.y, player.width, player.height);
@@ -94,7 +93,8 @@ window.onload = function() {
     document.addEventListener("keydown", playerMove);
 }
 
-
+                                                                // Title: (chrome-dinosaur-game) * Author:(Yip, K) * Date: (2023) * Code version:(v1) * 
+                                                                //  Availability:(https://github.com/ImKennyYip/chrome-dinosaur-game.git) * **/
 
 function load(){
     requestAnimationFrame(load);
@@ -103,30 +103,32 @@ function load(){
         return;
     }
 
-    content.clearRect (0, 0, canvas.width, canvas.height);
-
+    content.clearRect (0, 0, canvas.width, canvas.height);                              
+                                                                                
     speedY += gravity;
-    player.y = Math.min(player.y + speedY, playerY);
+    player.y = Math.min(player.y + speedY, playerY);                         
 
     content.drawImage(playerImg, player.x, player.y, player.width, player.height);
 
-    for (let i = 0; i < randomBox.length; i++) {
-        let box = randomBox[i];
-        box.x += speedX;
-        content.drawImage(box.img, box.x, box.y, box.width, box.height);
-
-        if ( colliding(player, box)) {
-             gameOver = true;
-             playerImg.src ="./img/collided.png";
-             playerImg.onload = function(){
-                collidedImg = new Image;
-                collidedImg.src = "./img/collided.png"
+    for (let i = 0; i < randomBox.length; i++) {                              //Title: (chrome-dinosaur-game) * Author:(Yip, K) * Date: (2023) * Code version:(v1) *
+        let box = randomBox[i];                                               //Availability:(https://github.com/ImKennyYip/chrome-dinosaur-game.git) * **/
+        box.x += speedX;                                                      
+        content.drawImage(box.img, box.x, box.y, box.width, box.height);      
+                                                                             
+        if ( colliding(player, box)) {                                        // Title: (chrome-dinosaur-game) * Author:(Yip, K) * Date: (2023) * Code version:(v1) * 
+             gameOver = true;                                                 //  Availability:(https://github.com/ImKennyYip/chrome-dinosaur-game.git) * **/
+             playerImg.src ="./img/collided.png";                             
+             playerImg.onload = function(){                                   
+                collidedImg = new Image;                                      
+                collidedImg.src = "./img/collided.png"                        
 
                 content.drawImage(collidedImg, player.x, player.y, collidedPlayer.width, playerHeight);
              }
         }
 
     }
+                                                    // Title: (chrome-dinosaur-game) * Author:(Yip, K) * Date: (2023) * Code version:(v1) * 
+                                                    //  Availability:(https://github.com/ImKennyYip/chrome-dinosaur-game.git) * **/
 
     content.fillStyle = "crimson";
     content.font ="50px MArgarine";
@@ -136,14 +138,14 @@ function load(){
 }
 
 
-function playerMove(e) {
-
+function playerMove(e) {                           // Title: (chrome-dinosaur-game) * Author:(Yip, K) * Date: (2023) * Code version:(v1) * 
+                                                   //  Availability:(https://github.com/ImKennyYip/chrome-dinosaur-game.git) * **/
     if (gameOver) {
         return;
     }
-    if (( e.code == "Space" || e.code == "ArrowUp") && player.y == playerY) {
-    speedY = -25;
-    }
+    if (( e.code == "Space" || e.code == "ArrowUp") && player.y == playerY) {     
+    speedY = -25; 
+    }                                 
     if ( e.code == "ArrowRight" && player.x == playerX) {
         speedY = -5;
     }
@@ -174,7 +176,8 @@ function loadBox () {
     }
 
 
-    let loadRandomBox = Math.random();
+    let loadRandomBox = Math.random();             // Title: (chrome-dinosaur-game) * Author:(Yip, K) * Date: (2023) * Code version:(v1) * 
+                                                   //  Availability:(https://github.com/ImKennyYip/chrome-dinosaur-game.git) * **/
 
     if (loadRandomBox > .80) {
         box.img = boxThreeImg;
@@ -186,9 +189,9 @@ function loadBox () {
         box.width = boxTwoWidth;
         randomBox.push(box);
     }
-    else if (loadRandomBox > .70) {
+    else if (loadRandomBox > .70) {                // Title: (chrome-dinosaur-game) * Author:(Yip, K) * Date: (2023) * Code version:(v1) * 
+        box.width = boxOneWidth;                    //  Availability:(https://github.com/ImKennyYip/chrome-dinosaur-game.git) * **/
         box.img = boxOneImg;
-        box.width = boxOneWidth;
         randomBox.push(box);
     }
     else if (loadRandomBox > .50) {
@@ -201,10 +204,13 @@ function loadBox () {
     }
 }
 
+  
+
+                                                    // Title: (chrome-dinosaur-game) * Author:(Yip, K) * Date: (2023) * Code version:(v1) * 
+                                                    //  Availability:(https://github.com/ImKennyYip/chrome-dinosaur-game.git) * **/
 function colliding(a,b){
     return a.x < b.x +b.width &&
            a.x + a.width > b.x &&
            a.y < b.y + b.height &&
            a.y + a.height > b.y;
 }
-
