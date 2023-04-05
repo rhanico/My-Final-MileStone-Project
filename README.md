@@ -21,7 +21,7 @@ I WILL LINK ALL MY ORIGANAL REPOSITORIES TO SHOW MY WORK /HISTORY OF COMMITS AND
   
   
   ORGINAL GITHUB REPOSITORIES:
-    I have created multiple one as a rough draft, just help me to be organized.
+    I have created multiple repos as a rough drafts, to help me to be organized.
   https://github.com/rhanico/GroceryRun-RoughDraft.git
   https://github.com/rhanico/theGroceryRun.git
   https://github.com/rhanico/theGroceryRun--roughdraft.git  
