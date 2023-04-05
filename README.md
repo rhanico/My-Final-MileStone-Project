@@ -28,16 +28,38 @@ I WILL LINK ALL MY ORIGANAL REPOSITORIES TO SHOW MY WORK /HISTORY OF COMMITS AND
   
   
   
-  
+The whole JavaScript Code for this game is based of Kenny Yip Coding's youtube tutorials.
+
   CITATION :
+        Kenny Yip Coding. (2023, January 7). How to Build Google Chrome Dinosaur Game in JavaScript HTML CSS [Video]. YouTube.   https://www.youtube.com/watch?v=lgck-txzp9o  
  
-   The whole JavaScript Code for this game is based of Kenny Yip Coding's youtube tutorials.
+ Kenny Yip's Github Repo/CODE :
+ https://github.com/ImKennyYip/chrome-dinosaur-game.git
  
- Kenny Yip Coding. (2023, January 7). How to Build Google Chrome Dinosaur Game in JavaScript HTML CSS [Video]. YouTube. https://www.youtube.com/watch?v=lgck-txzp9o  
  
- Kenny Yip's Github Repo :
- https://github.com/ImKennyYip/chrome-dinosaur-game.git                       
-  
-  
-  
-  
+ SOURCES:
+    I used multiple reading sources to add style to my Game.
+ - W3 SCHOOLS: CSS/HTML :
+              https://www.w3schools.com/css/default.asp
+              https://www.w3schools.com/html/default.asp
+ - MDN: CSS/HTML :
+              https://developer.mozilla.org/en-US/docs/Web/CSS
+ - TUTORIALS POINTS: CSS:
+              https://www.tutorialspoint.com/css/index.htm
+              
+      
+   I used Google font libraries to add font style. 
+ - GOOGLE FONTS :
+              https://fonts.google.com
+              
+   MUSIC/SOUNDS
+   "LITTLE HAPPINES" - by Oneul
+           Youtube Link:
+               https://youtu.be/lRCGtI35VI0
+      
+              Oneul - Topic. (2023b, January 19). Little Happiness [Video]. YouTube. https://www.youtube.com/watch?v=lRCGtI35VI0
+              
+              
+   IMAGES/ILLUSTRATIONS:
+           
+             MADE BY ME.
